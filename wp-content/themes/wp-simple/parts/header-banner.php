@@ -107,11 +107,4 @@
         }
     }
     ?>
-    <section class="subpage-banner <?php if(isset($parallax_active)){echo $parallax_active;} ?>"  <?php if(isset($nimbus_parallax)){echo $nimbus_parallax;} ?>>
-        <div class="container text-left">
-            <div class="banner-wrap" data-sr='wait 0.4s, scale up 25%'>
-                <h1 class="banner-title"><?php get_template_part( 'parts/title'); ?></h1>
-            </div>
-        </div>
-    </section>
 <?php } ?>

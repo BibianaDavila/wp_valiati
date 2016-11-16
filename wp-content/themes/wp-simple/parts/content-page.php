@@ -9,14 +9,25 @@ if ($sidebar_select == 'right') {
 }
 if (empty($sidebar_select) || ($sidebar_select == 'none')) {
 ?>
-    <div <?php post_class('content row'); ?>>
-        <div class="col-xs-12 content-column">
-            <?php
-            the_content();
-            nimbus_clear();
-            get_template_part( 'parts/wp_link_pages');
-            comments_template();
-            ?>
+    
+    <?php 
+        global $wp;
+        $url_part = add_query_arg(array(),$wp->request);
+        $url_part = substr($url_part, strrpos($url_part, '/') + 1);
+    ?>
+
+    <div class="container-page" id="<?php echo $url_part?>">
+        <div class="container">
+            <div <?php post_class('content row'); ?>>
+                <div class="col-xs-12 content-column">
+                    <?php
+                    the_content();
+                    nimbus_clear();
+                    get_template_part( 'parts/wp_link_pages');
+                    comments_template();
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 <?php

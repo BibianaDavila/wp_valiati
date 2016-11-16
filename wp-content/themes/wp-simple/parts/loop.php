@@ -14,9 +14,7 @@ if (is_single()) {
     if (have_posts()) {
         while (have_posts()) {
             the_post();
-            echo "<div class='container'>";
             get_template_part( 'parts/content', 'page');
-            echo "</div>";
         }
     } else {
             get_template_part( 'parts/error', 'no_results');

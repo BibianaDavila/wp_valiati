@@ -12,37 +12,33 @@
         <div class="fallback_cb">
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="/wordpress/index.php">Home</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#orientacoes">Orientações</a>
+                    <a href="orientacoes">Orientações</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#action1">Publicações</a>
+                    <a href="publicacoes">Publicações</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#about">Pesquisa</a>
+                    <a href="pesquisa">Pesquisa</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#social">Eventos & Mídia</a>
+                    <a href="eventos-e-midias">Eventos & Mídia</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#action2">Grupo de trabalho</a>
+                    <a href="grupos-trabalho">Grupo de trabalho</a>
                 </li>
                 <li class="separator"></li>
                 <li>
-                    <a href="#team">Estudantes</a>
+                    <a href="estudantes">Estudantes</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<div class="lang-container">
-    <ul><?php pll_the_languages(); ?></ul>
-</div>

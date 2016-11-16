@@ -1,4 +1,9 @@
 <div class="container footer">
+	<div class="row text-center">	
+		<div class="lang-container">
+	    	<ul><?php pll_the_languages(); ?></ul>
+		</div>
+	</div>
     <div class="row">
         <div class="col-md-5">
             <p id="copyright"><?php echo esc_html(nimbus_get_option('copyright')) ?></p>

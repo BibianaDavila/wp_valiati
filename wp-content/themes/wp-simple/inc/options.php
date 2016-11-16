@@ -226,7 +226,7 @@ Kirki::add_section( 'sub_banner_options', array(
 ) );
 
 
-/*Kirki::add_field( 'wp-simple-config', array(
+Kirki::add_field( 'wp-simple-config', array(
 	'type'        => 'color',
 	'settings'    => 'sub-banner-background-color',
 	'label'       => __( 'Row Background Color', 'wp-simple' ),
@@ -251,7 +251,6 @@ Kirki::add_field( 'wp-simple-config', array(
 	'default'     => '',
 	'priority'    => 1,
 ) );
-*/
     
 // Frontpage Featured
 
