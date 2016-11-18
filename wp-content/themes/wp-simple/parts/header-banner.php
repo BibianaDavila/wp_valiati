@@ -29,16 +29,48 @@
                         <!-- links para redes sociais -->
                         <div class="social-bar">
                             <div data-sr="wait 0.2s, scale up 25%">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+
+                                <?php if (nimbus_get_option('social-links-fb') != '') { ?>
+
+                                    <a href="<?php echo esc_html(nimbus_get_option('social-links-fb')); ?>">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+
+                                <?php } ?>
+
                             </div>
                             <div data-sr="wait 0.2s, scale up 25%">
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                
+                                <?php if (nimbus_get_option('social-links-insta') != '') { ?>
+
+                                    <a href="<?php echo esc_html(nimbus_get_option('social-links-insta')); ?>">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+
+                                <?php } ?>
+
                             </div>
                             <div data-sr="wait 0.2s, scale up 25%">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                
+                                <?php if (nimbus_get_option('social-links-twitter') != '') { ?>
+
+                                    <a href="<?php echo esc_html(nimbus_get_option('social-links-twitter')); ?>">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+
+                                <?php } ?>
+
                             </div>
                             <div data-sr="wait 0.2s, scale up 25%">
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+
+                                <?php if (nimbus_get_option('social-links-yt') != '') { ?>
+
+                                    <a href="<?php echo esc_html(nimbus_get_option('social-links-yt')); ?>">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+
+                                <?php } ?>
+
                             </div>
                         </div>
                         <div class="separator"></div>
@@ -54,13 +86,35 @@
                         <!-- texto -->
                         <?php if (nimbus_get_option('fp-banner-sub-title') != '') { ?>
                             <div class="banner-sub-title">
-                                <?php /*echo esc_html(nimbus_get_option('fp-banner-sub-title')); */?>
+                                
+                                 <?php 
+                                    switch(pll_current_language()){
+                                        case 'pt':
+                                            ?>
 
-                                <p>Economista (UFRGS), Mestre em Urbanismo com ênfase em Economia da Cultura (PROPUR-UFRGS), Doutor em Economia do Desenvolvimento (PPGE-UFRGS).</p>
+                                            <p>Economista (UFRGS), Mestre em Urbanismo com ênfase em Economia da Cultura (PROPUR-UFRGS), Doutor em Economia do Desenvolvimento (PPGE-UFRGS).</p>
 
-                                <p>Professor do Departamento de Economia e Relações Internacionais da Universidade Federal do Rio Grande do Sul. 
+                                            <p>Professor do Departamento de Economia e Relações Internacionais da Universidade Federal do Rio Grande do Sul. 
 
-                                <p>Professor, consultador e pesquisador em Economia da Cultura em instituições nacionais e internacionais, entre elas UFRGS, Ministério da Cultura do Brasil, FACAMP, Unesco, FEE-RS, Organização dos Estados Ibero Americanos (OEI) e Universidade de Valência – Espanha, de Pesquisa CNPQ Economia Criativa, Cultura e Desenvolvimento. Membro do Conselho Científico do CEGOV/UFRGS.</p>    
+                                            <p>Professor, consultador e pesquisador em Economia da Cultura em instituições nacionais e internacionais, entre elas UFRGS, Ministério da Cultura do Brasil, FACAMP, Unesco, FEE-RS, Organização dos Estados Ibero Americanos (OEI) e Universidade de Valência – Espanha. Membro do Conselho Científico do CEGOV/UFRGS. Email UFRGS: leandro.valiati@gmail.com | leandro.valiati@ufrgs.br.
+
+                                            <?php
+                                            break;
+
+                                        case 'en':
+                                            ?>
+
+                                                <p>Economist (UFRGS), Master in Urban planning with an emphasis on Economics of Culture (PROPUR-UFRGS), PhD in Development Economics (PPGE-UFRGS). </p>
+
+                                                <p>Professor of Economics and International Relations at the Federal University of Rio Grande do Sul.</p>
+
+                                                <p>Teacher, consultant and researcher in Economy of Culture in national and international institutions, including UFRGS, Brazil’s Ministry of Culture, FACAMP, Unesco, FEE-RS, Organization of Ibero American States (OEI) and the University of Valencia – Spain. Member of the Scientific Council CEGOV / email UFRGS: leandro.valiati@gmail.com | leandro.valiati@ufrgs.br.
+
+
+                                            <?php
+                                            break;
+                                    }
+                                ?>   
                             </div>
                         <?php } ?>
 

@@ -252,8 +252,119 @@ Kirki::add_field( 'wp-simple-config', array(
 	'priority'    => 1,
 ) );
     
+
+// Links para redes sociais
+
+Kirki::add_section( 'social-links', array(
+    'title'          => __( 'Alterar links para redes sociais', 'wp-simple' ),
+    'description'    => '',
+    'panel'          => '', 
+    'priority'       => 10,
+    'capability'     => 'edit_theme_options',
+    'theme_supports' => '',
+) );
+
+Kirki::add_field( 'social-links-fb', array(
+	'settings' => 'social-links-fb',
+	'label'    => __( 'Link para o Facebook', 'wp-simple' ),
+	'section'  => 'social-links',
+	'type'     => 'text',
+	'priority' => 10,
+	'default'  => '',
+	'description'   => __( 'Deixe em branco para esconder.', 'wp-simple' ),
+) );
+Kirki::add_field( 'social-links-insta', array(
+	'settings' => 'social-links-insta',
+	'label'    => __( 'Link para o Instagram', 'wp-simple' ),
+	'section'  => 'social-links',
+	'type'     => 'text',
+	'priority' => 10,
+	'default'  => '',
+	'description'   => __( 'Deixe em branco para esconder.', 'wp-simple' ),
+) );
+Kirki::add_field( 'social-links-twitter', array(
+	'settings' => 'social-links-twitter',
+	'label'    => __( 'Link para o Twitter', 'wp-simple' ),
+	'section'  => 'social-links',
+	'type'     => 'text',
+	'priority' => 10,
+	'default'  => '',
+	'description'   => __( 'Deixe em branco para esconder.', 'wp-simple' ),
+) );
+Kirki::add_field( 'social-links-yt', array(
+	'settings' => 'social-links-yt',
+	'label'    => __( 'Link para o Youtube', 'wp-simple' ),
+	'section'  => 'social-links',
+	'type'     => 'text',
+	'priority' => 10,
+	'default'  => '',
+	'description'   => __( 'Deixe em branco para esconder.', 'wp-simple' ),
+) );
+
+// Fundos páginas        
+            
+Kirki::add_section( 'pg-bgs', array(
+    'title'          => __( 'Alterar fundo páginas', 'wp-simple' ),
+    'description'    => '',
+    'panel'          => '', 
+    'priority'       => 10,
+    'capability'     => 'edit_theme_options',
+    'theme_supports' => '',
+) );
+
+Kirki::add_field( 'pg-bg-orientacoes', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-orientacoes',
+	'label'       => __( 'Imagem de Fundo ::: Orientações', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+Kirki::add_field( 'pg-bg-publicacoes', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-publicacoes',
+	'label'       => __( 'Imagem de Fundo ::: Publicações', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+Kirki::add_field( 'pg-bg-pesquisa', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-pesquisa',
+	'label'       => __( 'Imagem de Fundo ::: Pesquisa', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+Kirki::add_field( 'pg-bg-eventos', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-eventos',
+	'label'       => __( 'Imagem de Fundo ::: Eventos', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+Kirki::add_field( 'pg-bg-grupos', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-grupos',
+	'label'       => __( 'Imagem de Fundo ::: Grupo de Trabalho', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+Kirki::add_field( 'pg-bg-estudantes', array(
+	'type'        => 'image',
+	'settings'    => 'pg-bg-estudantes',
+	'label'       => __( 'Imagem de Fundo ::: Estudantes', 'wp-simple' ),
+	'section'     => 'pg-bgs',
+	'default'     => '',
+	'priority'    => 1,
+) );
+
+
 // Frontpage Featured
 
+/*
 Kirki::add_section( 'fp-featured', array(
     'title'          => __( 'Frontpage Featured Section', 'wp-simple' ),
     'description'    => '',
@@ -370,7 +481,7 @@ Kirki::add_field( 'wp-simple-config', array(
 
 // Action 1
             
-Kirki::add_section( 'fp-action1', array(
+/*Kirki::add_section( 'fp-action1', array(
     'title'          => __( 'Frontpage Action Row #1', 'wp-simple' ),
     'description'    => '',
     'panel'          => '', 
@@ -1137,10 +1248,13 @@ Kirki::add_field( 'wp-simple-config', array(
 	'priority' => 10,
 	'default'  => 'contact',
 	'description'   => __( 'The frontpage section IDs (what shows up in the hover state and the address bar when clicked) have already been set to a default show in this field. If you would like to change the ID so that a different term comes up in the slug for that section (ie. http://example.com/#top instead of /#home), then change the term below for the corresponding section. You will also want to add the custom menu items in the Menus section of your dashboard (click "Links," then add the entire URL, such as http://example.com/#top). IMPORTANT: You must also add this term to the title field in the menu editor. If you do not see this field you may have to activate it by selecting the Screen Options tab in the top right of the page and then checking the Title Attribute box.', 'wp-simple' ),
-) );
+) );*/
+
     
+
 // Blog settings
 
+/*
 Kirki::add_section( 'blog-settings', array(
     'title'          => __( 'Blog Settings', 'wp-simple' ),
     'description'    => '',
@@ -1162,7 +1276,7 @@ Kirki::add_field( 'wp-simple-config', array(
 		'left'  => esc_attr__( 'Left', 'wp-simple' ),
 	),
 ) );
-
+*/
 
 // #################################################
 // Some Custom Sanitize Functions
